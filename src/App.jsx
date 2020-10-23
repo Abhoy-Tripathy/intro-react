@@ -34,7 +34,7 @@ class App extends React.Component {
   }
 
   /*Write an addStudent method here*/
-
+  addStudent(studentName) 
   addGrade(assignment, student, score) {
     let grades = this.state.grades;
     let assignmentName = assignment;
@@ -45,6 +45,7 @@ class App extends React.Component {
     grades[assignmentName][studentName] = score;
     this.setState({ grades: grades });
   }
+
 
   render() {
     let tabChoice = <div />;
